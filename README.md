@@ -29,6 +29,8 @@ Auto-NBA is an AI search tool for exploring neural network architecture, bitwidt
 | [4, 6] | 1 hr 35 min | 40 min | 81.647 |
 | [4, 6, 8] | 2 hr 17 min | 41 min | 85.536 |
 
+Larger bitwidth search spaces improved model accuracy, but also increased search time.
+
 ## Technologies
 - Python
 - Google Colab
