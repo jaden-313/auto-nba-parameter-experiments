@@ -11,6 +11,24 @@ Auto-NBA is an AI search tool for exploring neural network architecture, bitwidt
 - Efficiency metric: latency vs. FLOPs
 - Channel list sizes
 
+## Results Summary
+
+| Experiment | Main Finding |
+|---|---|
+| Bitwidth Search Space | Larger bitwidth search spaces increased search time but improved accuracy. |
+| Fixed Bitwidth Values | 8-bit produced the highest accuracy among fixed bitwidth runs. |
+| Alpha/Beta Weights | Lower alpha/beta values produced higher accuracy in the tested runs. |
+| Efficiency Metric | Latency had better training time, while FLOPs had faster search time. |
+| Channel List | Larger channel sizes improved accuracy but increased search time. |
+
+## Example Result: Bitwidth Search Space
+
+| Configuration | Search Time | Train Time | Accuracy |
+|---|---:|---:|---:|
+| [4] | 55 min | 46 min | 77.917 |
+| [4, 6] | 1 hr 35 min | 40 min | 81.647 |
+| [4, 6, 8] | 2 hr 17 min | 41 min | 85.536 |
+
 ## Technologies
 - Python
 - Google Colab
